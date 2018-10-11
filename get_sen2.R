@@ -24,7 +24,7 @@ get_sen2 <- function(time_range, min_coverage = 0, target_dir = "data", tile_id 
       )
     
     print(paste(nrow(query), "tiles found for this AOI."))
-    #check overlap with AOI
+    #check overlap with AOI --> uncomment this if you do not want to use the seperate function aoi_coverage as done below
     #imgfootprints <-st_as_sf(query,wkt="footprint", crs = 4326)$footprint
     #aoi_coverage <- as.data.frame(as.numeric(st_area(st_intersection(imgfootprints,aoi)) / st_area(aoi)))
     #names(aoi_coverage) <- "aoi_coverage"
