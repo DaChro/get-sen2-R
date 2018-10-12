@@ -1,5 +1,5 @@
 # function to download and prepare Sentinel-2 data
-# This is a wrapper around getSpatialData() by J. Schwalb-Willmann. This function adds unzipping and the possibility to check tiles for how much they overlap with the aoi
+# This is a wrapper around getSpatialData() by J. Schwalb-Willmann, just adding the unzipping and the possibility to check tiles for how much they overlap with the aoi
 
 get_sen2 <- function(time_range, min_coverage = 0, target_dir = "data", tile_id = NULL, relative_orbit=NULL, draw_aoi=TRUE, username, password){
   require(mapedit)
