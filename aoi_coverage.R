@@ -1,6 +1,5 @@
-
-#function to compute the coverage of a given aoi by the different images resuling 
-#from a query on that result
+#function to compute the coverage of a given aoi by the different images resulting 
+#from a query on that aoi
 aoi_coverage <- function(query, aoi) {
   #check overlap with AOI
   imgfootprints <-st_as_sf(query,wkt="footprint", crs = 4326)$footprint
